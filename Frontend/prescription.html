@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescriptions | CarePlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="patient-dashboard.html" class="nav-brand">CarePlus</a>
+        <ul class="nav-links">
+            <li><a href="patient-dashboard.html" class="btn btn-secondary">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2>My Prescriptions</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Diagnosis</th>
+                        <th>Medicines</th>
+                        <th>Notes</th>
+                        <th>PDF</th>
+                    </tr>
+                </thead>
+                <tbody id="prescription-body">
+                    <tr>
+                        <td colspan="6">Loading prescriptions...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="js/prescription.js?v=3"></script>
+    <script src="js/back.js?v=1"></script>
+</body>
+</html>

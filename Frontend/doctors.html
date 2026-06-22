@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Find Doctors | CarePlus
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="nav-brand">
+
+            CarePlus
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="doctors.html"
+                    style="color: var(--primary-color);">
+
+                    Doctors
+
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="login.html"
+                    class="btn btn-secondary">
+
+                    Login
+
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="register.html"
+                    class="btn btn-primary">
+
+                    Register
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Doctors Section -->
+    <section class="section">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+
+                Our Specialists
+
+            </h2>
+
+            <p class="section-subtitle">
+
+                Find and book appointments with experienced doctors.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Search -->
+        <div class="doctor-search">
+
+            <input
+                type="text"
+                id="search-specialty"
+                class="form-control"
+                placeholder="Search specialty...">
+
+            <button
+                id="search-btn"
+                class="btn btn-primary">
+
+                Search
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Doctor Cards -->
+        <div
+            class="doctors-grid"
+            id="doctors-container">
+
+            <p>
+                Loading doctors...
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CarePlus Healthcare.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/doctors.js"></script>
+
+    <script src="js/back.js?v=1"></script>
+</body>
+
+</html>

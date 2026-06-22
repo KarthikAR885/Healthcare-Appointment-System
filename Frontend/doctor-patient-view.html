@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Patient Medical History
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="#"
+            class="nav-brand">
+
+            CarePlus Doctor Panel
+
+        </a>
+
+    </nav>
+
+
+
+
+
+    <!-- Patient Details -->
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+
+            <h2>
+                Patient Details
+            </h2>
+
+
+
+
+            <p>
+                <strong>
+                    Age:
+                </strong>
+
+                <span id="age"></span>
+            </p>
+
+
+
+            <p>
+                <strong>
+                    Gender:
+                </strong>
+
+                <span id="gender"></span>
+            </p>
+
+
+
+            <p>
+                <strong>
+                    Blood Group:
+                </strong>
+
+                <span id="bloodGroup"></span>
+            </p>
+
+
+
+            <p>
+                <strong>
+                    Medical History:
+                </strong>
+
+                <span id="medicalHistory"></span>
+            </p>
+
+
+
+
+
+            <hr>
+
+
+
+
+
+            <!-- Previous Appointments -->
+            <h3>
+                Previous Appointments
+            </h3>
+
+
+            <div
+                id="appointment-history">
+
+                Loading history...
+
+            </div>
+
+
+
+
+
+            <hr>
+
+
+
+
+
+            <!-- Doctor Notes -->
+            <h3>
+                Prescription
+            </h3>
+
+
+
+            <label for="diagnosis">
+                Diagnosis
+            </label>
+
+            <textarea
+                id="diagnosis"
+                class="form-control"
+                placeholder="Enter diagnosis"></textarea>
+
+            <br>
+
+
+
+            <label for="medicines">
+                Medicines
+            </label>
+
+            <textarea
+                id="medicines"
+                class="form-control"
+                placeholder="Enter medicines"></textarea>
+
+            <br>
+
+
+
+            <label for="doctorNotes">
+                Consultation Notes
+            </label>
+
+            <textarea
+                id="doctorNotes"
+                class="form-control"
+                placeholder="Enter prescription or notes">
+
+            </textarea>
+
+            <br>
+
+
+
+
+            <button
+                id="save-notes-btn"
+                class="btn btn-primary">
+
+                Save Prescription
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/doctor-view.js?v=7"></script>
+
+    <script src="js/back.js?v=1"></script>
+</body>
+
+</html>

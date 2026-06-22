@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Admin Dashboard | CarePlus
+    </title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <a href="index.html"
+            class="nav-brand">
+
+            CarePlus Admin
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+
+                <a href="#"
+                    class="btn btn-secondary"
+                    id="logout-btn">
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+
+
+    <div class="dashboard-container">
+
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <ul class="sidebar-nav">
+
+
+                <li
+                    class="active"
+                    id="tab-dashboard">
+
+                    Dashboard
+
+                </li>
+
+
+
+                <li
+                    id="tab-doctors">
+
+                    Doctors
+
+                </li>
+
+
+
+                <li
+                    id="tab-patients">
+
+                    Patients
+
+                </li>
+
+
+
+                <li
+                    id="tab-appointments">
+
+                    Appointments
+
+                </li>
+
+
+
+                <li
+                    id="tab-reports">
+
+                    Reports
+
+                </li>
+
+
+            </ul>
+
+        </aside>
+
+
+
+
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+
+            <h2>
+                Admin Dashboard
+            </h2>
+
+
+
+            <div
+                id="admin-alert"
+                class="alert">
+
+            </div>
+
+
+
+
+
+            <!-- Dashboard Stats -->
+            <div
+                class="services-grid"
+                id="stats-view">
+
+
+                <div
+                    class="service-card">
+
+                    <h3>
+                        Doctors
+                    </h3>
+
+                    <p
+                        id="stat-doctors">
+
+                        0
+
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div
+                    class="service-card">
+
+                    <h3>
+                        Patients
+                    </h3>
+
+                    <p
+                        id="stat-patients">
+
+                        0
+
+                    </p>
+
+                </div>
+
+
+
+
+
+                <div
+                    class="service-card">
+
+                    <h3>
+                        Appointments
+                    </h3>
+
+                    <p
+                        id="stat-appointments">
+
+                        0
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+            <!-- Search -->
+            <div
+                style="margin-bottom:20px;">
+
+                <input
+                    type="text"
+                    id="search-input"
+                    class="form-control"
+                    placeholder="Search doctors...">
+
+            </div>
+
+
+
+
+
+
+            <!-- Data Table -->
+            <div
+                class="table-responsive">
+
+                <table
+                    id="admin-table">
+
+                    <thead>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td
+                                colspan="5">
+
+                                Select a tab
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Add Doctor Form -->
+            <div
+                id="add-doctor-form-container"
+                style="display:none; margin-top:30px;">
+
+
+                <h3>
+                    Add Doctor
+                </h3>
+
+
+
+                <form
+                    id="add-doctor-form">
+
+
+
+                    <div
+                        class="form-group">
+
+                        <label>
+                            Doctor Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="docName"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+
+
+
+
+                    <div
+                        class="form-group">
+
+                        <label>
+                            Specialization
+                        </label>
+
+                        <input
+                            type="text"
+                            id="docSpecialty"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+
+
+
+
+                    <div
+                        class="form-group">
+
+                        <label>
+                            Experience
+                        </label>
+
+                        <input
+                            type="number"
+                            id="docExp"
+                            class="form-control"
+                            required>
+
+                    </div>
+
+
+
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Save Doctor
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+
+
+
+    <script src="js/admin.js"></script>
+
+    <script src="js/back.js?v=1"></script>
+</body>
+
+</html>
